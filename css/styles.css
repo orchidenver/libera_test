@@ -1981,7 +1981,7 @@ input {
   #footer {
     margin-top: 100px;
     height: 80vh;
-    padding: 70px 0 0;
+    padding: 70px 0 env(safe-area-inset-bottom);
   }
 
   .footer {
