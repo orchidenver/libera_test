@@ -86,8 +86,9 @@
   line-height: .95rem;
   color: #1b1b1b;
   color: #fff;
-  height: 40px;
-  padding: 0 0 0 15vw;
+  height: 80px;
+  padding: 30px 0 0 15vw;
+  margin-bottom: 5px;
 }
 
 .accordion-lang__a:active,
@@ -301,11 +302,11 @@
 
 .overlay {
   position: fixed;
-  z-index: 1001;
+  z-index: 1006;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   transform: translateX(-100vw);
   display: flex;
   flex-direction: column;
@@ -323,14 +324,16 @@
   transform: translateX(-100vw);
 }
 
-.nav-nav,
-.nav-nav .nav-ul {
-  height: 100vh;
+.nav-nav {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
 
 .nav-nav .nav-ul {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -338,7 +341,7 @@
 }
 
 .nav-nav .nav-ul li {
-  height: 6vh;
+  height: 6%;
   width: 100vw;
   overflow: hidden;
   outline: none;
@@ -349,16 +352,16 @@
 }
 
 .nav-nav .nav-ul li:first-child {
-  height: 17vh;
+  height: 17%;
 }
 
 .nav-nav .nav-ul li:nth-child(5) {
-  height: 15vh;
+  height: 15%;
   padding-bottom: 9vh;
 }
 
 .nav-nav .nav-ul li:nth-child(6) {
-  height: 50vh;
+  height: 50%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -455,7 +458,7 @@
   position: fixed;
   top: 2rem;
   right: 2rem;
-  z-index: 1003;
+  z-index: 1007;
   display: inline;
   cursor: pointer;
 }
@@ -1169,6 +1172,16 @@ input {
   to {
     opacity: 1;
   }
+}
+
+.ios-bug-fixer {
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .title {
