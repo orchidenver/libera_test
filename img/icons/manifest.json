@@ -1,0 +1,13 @@
+{
+  "name": "Libera Foundation",
+  "short_name": "Libera Foundation",
+  "icons": [
+    {
+      "src": "google-touch-icon.png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "fullscreen"
+}
